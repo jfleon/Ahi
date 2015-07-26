@@ -2,6 +2,9 @@
 #include "Moose.h"
 #include "AppFactory.h"
 #include "ModulesApp.h"
+#include "RadiationBC.h" // specific module
+#include "PostprocessorFunction.h" //from moose/test directory
+#include "ScalarDirichletBC.h" //from moose exampel 18
 
 template<>
 InputParameters validParams<AhiApp>()
@@ -44,6 +47,9 @@ extern "C" void AhiApp__registerObjects(Factory & factory) { AhiApp::registerObj
 void
 AhiApp::registerObjects(Factory & factory)
 {
+ registerBoundaryCondition(RadiationBC);
+ registerFunction(PostprocessorFunction);
+ registerBoundaryCondition(ScalarDirichletBC);
 }
 
 // External entry point for dynamic syntax association

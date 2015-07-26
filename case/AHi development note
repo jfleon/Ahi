@@ -1,0 +1,36 @@
+Notes
+ex 7 j integre la condition de flux radiative
+a cette occasion developpe la classe radiationBC.
+
+ex 8 on va mettre un thermocouple
+y a un systeme avec les coordonees
+les coordonees seront mieux adaptees a des etudes parametriques.
+et stocker le gradient de T
+
+Done!
+
+ex 9 on met une source de chaleur  avec une fonction couplee a un thermocouple==> fait!
+
+
+
+ex 10 documente
+on met une puissance de source et une surface de boundary
+temps de calcul sur ma z800
+
+24 proc= 174.64s
+18 proc= 162s
+12 proc= 130s
+8 proc= 170s
+6 proc 233s
+
+12 proc meilleurs!
+et parsing libmesh
+
+a ce moment la il faudra  reflechir  lameilleure strategie d optimisation
+
+ensuite bibliotheque materoaucx et anisotropie.
+carbone
+papyex
+poudre avec transfert radiatif
+sechage
+frittage modele constitutif?
