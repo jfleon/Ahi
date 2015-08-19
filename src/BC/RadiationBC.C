@@ -25,8 +25,8 @@ InputParameters validParams<RadiationBC>()
   return params;
 }
 
-RadiationBC::RadiationBC(const std::string & name, InputParameters parameters) :
-    IntegratedBC(name, parameters),
+RadiationBC::RadiationBC(const InputParameters & parameters) :
+    IntegratedBC(parameters),
     _emissivity(getParam<Real>("emissivity")),
     _some_var_val(coupledValue("some_var"))
 {}

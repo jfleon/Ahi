@@ -11,7 +11,7 @@ InputParameters validParams<AhiApp>();
 class AhiApp : public MooseApp
 {
 public:
-  AhiApp(const std::string & name, InputParameters parameters);
+  AhiApp(InputParameters parameters);
   virtual ~AhiApp();
 
   static void registerApps();
